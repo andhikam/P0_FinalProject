@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Jan Ken Po!</title>
+	</head>
+	<body>
+		<h1 class="text-center" id="titlePlay"></h1>
+		<div id="playArena">
+			<div id="labelStatus">STATUS:</div>
+			<div id="labelScore">SCORE:</div>
+			<div id="status"></div>
+			<div id="buttonHome">
+				<a href="index.html"
+					><button>
+						Need a Rest?<br />
+						Click for Back to Home.
+					</button></a
+				>
+			</div>
+			<div id="score">
+				<h3 id="totalMenang">Menang = 0</h3>
+				<h3 id="totalKalah">Kalah = 0</h3>
+				<h3 id="totalSeri">Seri = 0</h3>
+				<h3 id="totalWinstreak">Winstreak = 0</h3>
+				<div id="buttonRefresh">
+					<button id="buttonRefresh2">REFRESH!</button>
+				</div>
+			</div>
+			<div id="arena"></div>
+		</div>
+		<div class="center btn-group">
+			<input
+				type="image"
+				src="/img/batu.png"
+				name="batu"
+				id="batu"
+				onclick="klik('batu')"
+			/>
+			<input
+				type="image"
+				src="/img/gunting.png"
+				name="gunting"
+				id="gunting"
+				onclick="klik('gunting')"
+			/>
+			<input
+				type="image"
+				src="/img/kertas.png"
+				name="kertas"
+				id="kertas"
+				onclick="klik('kertas')"
+			/>
+		</div>
+		<br />
+	</body>
+	<script src="./script.js"></script>
+</html>

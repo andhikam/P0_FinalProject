@@ -1,0 +1,240 @@
+body {
+	background-image: url(./img/bg.jpg);
+	font-family: 'Slabo 27px', serif;
+	color: white;
+}
+
+.img-center {
+	margin: auto;
+	display: block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h1 {
+	margin-top: 75px;
+}
+
+#labelStatus {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 10px;
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	color: black;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#labelScore {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 10px;
+	height: 50px;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: black;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#hurufTitle {
+	color: white;
+	text-align: center;
+	animation-name: text;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	font-size: 80px;
+}
+
+@keyframes text {
+	0% {
+		color: white;
+	}
+	50% {
+		color: black;
+	}
+	100% {
+		color: white;
+	}
+}
+
+.btn-group button {
+	padding: 100px;
+	cursor: pointer;
+	float: right;
+}
+
+.btn-group:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.btn-group button:not(:last-child) {
+	border-right: none;
+}
+
+.border {
+	background-color: rgb(38, 38, 38);
+	border-radius: 22px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: block;
+	padding: 20px;
+}
+
+.btn:hover {
+	background: white;
+	color: black;
+}
+
+.text {
+	text-align: center;
+	color: white;
+}
+
+.btn {
+	background-color: black;
+	padding: 14px 28px;
+	font-size: 30px;
+	cursor: pointer;
+	display: inline-block;
+	display: block;
+	margin: auto;
+	color: white;
+	border-radius: 22px;
+}
+
+.fontSize1 {
+	font-size: 30px;
+	color: white;
+}
+
+.borderRadius {
+	border-radius: 50px;
+}
+
+.banner {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	margin: auto;
+	width: 500px;
+	padding: 50px;
+	display: block;
+	animation-name: border;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	border-radius: 30%;
+}
+
+@keyframes border {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: black;
+	}
+	100% {
+		background-color: white;
+	}
+}
+
+#bannerGif {
+	margin: auto;
+	display: block;
+	opacity: 1;
+	border-radius: 30%;
+}
+
+#iniNama {
+	color: white;
+}
+
+.btn-group {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#status {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 10px;
+	height: 200px;
+	width: 150px;
+	position: absolute;
+	top: 75px;
+	color: black;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#score {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-right: 10px;
+	height: 200px;
+	width: 150px;
+	position: absolute;
+	right: 0;
+	top: 75px;
+	color: black;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+}
+
+h3 {
+	padding-left: 10px;
+}
+
+#arena {
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 350px;
+	width: 350px;
+	margin: auto;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pilihan {
+	object-fit: contain;
+}
+
+.computer {
+	object-fit: contain;
+}
+
+#playArena {
+	position: relative;
+}
+
+#buttonRefresh {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 30px;
+	bottom: 5px;
+}
+
+#totalWinstreak {
+	color: maroon;
+}
+
+#buttonHome {
+	position: absolute;
+	top: 300px;
+	left: 10px;
+}
